@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
+  <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.VerifyHomePage">
+        <methods>
+          <include name="toVerifyTravelButtonTab"/>
+          <include name="toVerifyMyMobiles"/>
+          <include name="loginFlipkart"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="logOutFlipkart"/>
+        </methods>
+      </class> <!-- test.VerifyHomePage -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.VerifyHomePage">
+        <methods>
+          <include name="toVerifyTravelButtonTab"/>
+          <include name="toVerifyMyMobiles"/>
+          <include name="loginFlipkart"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="logOutFlipkart"/>
+        </methods>
+      </class> <!-- test.VerifyHomePage -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
